@@ -1,0 +1,7 @@
+This is notoriously difficult due to the nature of a one-to-many relationship of Security Groups.
+
+
+It's a bit of a hack but you could simply run a for-loop to list all Security Groups and delete each one.
+This will delete all Security Groups that are not in use and throw an error for the ones that can't be deleted.
+
+$ for i in $(aws ec2 describe-security-groups --query 'SecurityGroups[*].GroupId'  --output text --region eu-west-1); do $(aws ec2 delete-security-group --group-id $i --region eu-west-1); done
