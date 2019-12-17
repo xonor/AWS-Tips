@@ -120,5 +120,15 @@ aws ec2 describe-instances \
 ```
 
 
+### 11. Describe all your Snapshots in a specific region that have been created after a certain date and list by their ID, Volume ID, Description and tags (supports multiple tags and shows Key and Value):
+```
+aws ec2 describe-snapshots \
+--owner self \
+--region eu-west-1 \
+--query 'Snapshots[?StartTime>=`2018-02-07`].{id:SnapshotId,vid:VolumeId,Desc:Description, tags:Tags[*].*}' \
+--output json
+```
+
+
 JMESPath website:
 -- http://jmespath.org/
