@@ -120,7 +120,7 @@ aws ec2 describe-instances \
 ```
 
 
-### 11. Describe all your Snapshots in a specific region that have been created after a certain date and list by their ID, Volume ID, Description and tags (supports multiple tags and shows Key and Value):
+#### 11. Describe all your Snapshots in a specific region that have been created after a certain date and list by their ID, Volume ID, Description and tags (supports multiple tags and shows Key and Value):
 ```
 aws ec2 describe-snapshots \
 --owner self \
