@@ -22,8 +22,9 @@ Not to be confused with the meta-data server at '169.254.169.254' or the NTP ser
 So, if you have 'enableDnsSupport' set as  **True**; queries to the Amazon provided DNS server at the 169.254.169.253 IP address, or the reserved IP address at the base of the VPC IPv4 network range plus two will succeed.
 
 As an example, the following commands will give the same result:
- - dig @169.254.169.253 amazon.com +short +trace
- - dig @10.0.0.2 amazon.com +short +trace
+
+    dig @169.254.169.253 amazon.com +short +trace
+    dig @10.0.0.2 amazon.com +short +trace
 
 In summary, you can use '169.254.169.253' as the IP address of the DNS resolver so no need to programmatically pull the IP address.
 
