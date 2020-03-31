@@ -12,6 +12,3 @@ How to programmatically pull the IP address of the Amazon provided DNS resolver 
 
 Here is a Bash one-liner using the AWS CLI that I put together to list enabled regions:  
 --  [https://github.com/xonor/AWS-Tips/blob/master/describe-enabledRegions.sh](https://github.com/xonor/AWS-Tips/blob/master/describe-enabledRegions.sh)
-
-Amazon DNS Server:  
---  [https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html#AmazonDNS](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html#AmazonDNS)
