@@ -1,2 +1,2 @@
-# aws-cli
-A reference guide for the aws cli
+# AWS-Tips
+A reference guide for the AWS
