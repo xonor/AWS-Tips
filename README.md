@@ -1,5 +1,5 @@
 # AWS-Tips
-**A reference guide for the AWS**
+**Directory**
 
 JMESPath (AWS CLI queries):  
 --  [https://github.com/xonor/AWS-Tips/blob/master/JMESPATH.md](https://github.com/xonor/AWS-Tips/blob/master/JMESPATH.md)
